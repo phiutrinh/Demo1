@@ -1,0 +1,61 @@
+{
+  "id": "4a0aa93a-c342-4602-978e-dd611915b5f0",
+  "version": "2.0",
+  "name": "verify",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "6970c892-fcfc-4c2e-8dae-1cab0e5802b1",
+    "name": "Verify",
+    "commands": [{
+      "id": "093584f4-f477-4cdf-9b22-c73cf5b7c998",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php?fbclid=IwAR1nTMqIn1hgyKvV8c-yGNYWvh2CVEIbKV1WLjNSlrBB9ay2e_rVEIzxToQ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9727fd3d-43c3-44e3-aac7-ef7f2d7042a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0fe1014-9155-4740-90b1-cdeed82820dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1b8d637-60d4-4a4e-a365-6665a8524e12",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "13e8033a-648d-4c79-9d2c-ad3d693494d2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6970c892-fcfc-4c2e-8dae-1cab0e5802b1"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
